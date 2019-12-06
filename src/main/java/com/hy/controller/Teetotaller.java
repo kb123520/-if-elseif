@@ -35,6 +35,6 @@ public class Teetotaller {
         OrderDTO orderDTO=new OrderDTO();
         orderDTO.setType(new String("2"));
         String type=iOrderService.handle(orderDTO);
-        System.out.println(type+"==============");
+//        System.out.println(type+"==============");
     }
 }
