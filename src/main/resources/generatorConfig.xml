@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+          PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+          "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<context id="generateTables" targetRuntime="MyBatis3">
+
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+			<property name="suppressDate" value="true" />
+		</commentGenerator>
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://192.168.206.100:19103/db_meter?useUnicode=true&amp;charsetEncoding=utf-8"
+			userId="admin_meter" password="123456"></jdbcConnection>
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<javaModelGenerator targetPackage="com.sgcc.eip.cmc.meter.uav.po"
+			targetProject="src/main/java">
+
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="mapper"
+			targetProject="src/main/resources">
+		</sqlMapGenerator>
+
+		<javaClientGenerator targetPackage="com.sgcc.eip.cmc.meter.uav.dao"
+			type="XMLMAPPER" targetProject="src/main/java" />
+
+
+<!--        <table tableName="is_whm_evaluation" domainObjectName="IsWhmEvaluation" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--        </table>-->
+
+<!--        <table tableName="is_whm_pressure" domainObjectName="IsWhmPressure" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--        </table>-->
+
+<!--        <table tableName="is_whm_parameter" domainObjectName="IsWhmParameter" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--        </table>-->
+
+<!--        <table tableName="is_whm_veneertest" domainObjectName="IsWhmVeneertest" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--        </table>-->
+
+<!--        <table tableName="is_whm_pcb_inspection" domainObjectName="IsWhmPcbInspection" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--        </table>-->
+
+<!--        <table tableName="is_whm_basicerroritems" domainObjectName="IsWhmBasicerroritems" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--        </table>-->
+
+<!--		        <table tableName="is_whm_basicerror" domainObjectName="IsWhmBasicerror" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--		        </table>-->
+
+<!--        <table tableName="is_whm_battery_current" domainObjectName="IsWhmBatteryCurrent" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--        </table>-->
+
+<!--        <table tableName="is_whm_timingerror" domainObjectName="IsWhmTimingerror" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--        </table>-->
+
+
+<!--        <table tableName="is_whm_warninginfo" domainObjectName="IsWhmWarninginfo" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--        </table>-->
+<!--        <table tableName="is_whm_check_item" domainObjectName="isWhmCheckItem" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--        </table>-->
+
+<!--		<table tableName="category" domainObjectName="Category" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--		</table>-->
+<!--		<table tableName="data_collecting_method" domainObjectName="DataCollectingMethod" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--		</table>-->
+<!--		<table tableName="datatype" domainObjectName="DataType" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--		</table>-->
+<!--		<table tableName="infotype" domainObjectName="InfoType" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--		</table>-->
+<!--		<table tableName="qc_standard" domainObjectName="QCStandard" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--		</table>-->
+<!--		<table tableName="qc_standard_rule" domainObjectName="QCStandardRule" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--		</table>-->
+<!--		<table tableName="qc_standard_type" domainObjectName="QCStandardType" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--		</table>-->
+<!--		<table tableName="sub_category" domainObjectName="SubCategory" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--		</table>-->
+
+		<!--无人机-->
+		<table tableName="uav_ft_fpt" domainObjectName="UavFtFpt" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_ft_ipi" domainObjectName="UavFtIpi" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_ft_scf" domainObjectName="UavFtScf" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_ikc_bt" domainObjectName="UavIkcBt" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_ikc_mois" domainObjectName="UavIkcMois" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_ikc_pops" domainObjectName="UavIkcPops" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_kpc_gbsm" domainObjectName="UavKpcGbsm" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_kpc_itr" domainObjectName="UavKpcItr" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_kpc_vc" domainObjectName="UavKpcVc" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_ppc_airframe" domainObjectName="UavPpcAirframe" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_ppc_img_thr" domainObjectName="UavPpcImgThr" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_pro_en" domainObjectName="UavProEn" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_pro_eq" domainObjectName="UavProEq" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_psi_fls" domainObjectName="UavPsiFls" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_psi_h_img" domainObjectName="UavPsiHImg" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_qua_ck" domainObjectName="UavQaCk" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_test_fa" domainObjectName="UavTestFa" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_vi_airframe" domainObjectName="UavViAirframe" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+		<table tableName="uav_vi_gbss" domainObjectName="UavViGbss" enableCountByExample="false"  enableUpdateByExample="false"   enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+
+
+    </context>
+</generatorConfiguration>
